@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    font-family: 'Raleway',
+        sans-serif;
+    font-family: 'Rubik',
+        sans-serif;
+}
+
+.banner {
+    background: url(../images/header-bg.png)no-repeat;
+    width: 100%;
+    min-height: 710px;
+    background-position-x: right;
+    display: inline-block;
+    background-color: #FAFBFD;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
