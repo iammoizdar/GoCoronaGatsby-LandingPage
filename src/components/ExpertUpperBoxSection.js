@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Boxes from"../images/Boxes.png"
+import Boxes from"../images/boxes.png"
 import { device } from "../styles/Responsive"
 const BoxWrapper = styled.div `
     width: 100%;
