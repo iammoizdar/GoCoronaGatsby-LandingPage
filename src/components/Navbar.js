@@ -13,11 +13,11 @@ const NavBar = styled.div`
 const Logodiv = styled.div`
     cursor: pointer;
     width: 30%;
+    
      img{
-          @media ${device.mobileL} { 
-    width: 150px;
+         width: 150px;
      }
-  }
+  
 `
 const NavLinks = styled.div`
   display: flex;
