@@ -19,9 +19,9 @@ const Layout = ({children}) => {
                 <SecondSection />
                 <ExpertSection />
                 <HealthCare/>
-                <div className="content">
+                {/* <div className="content">
                     {children}
-                </div>
+                </div> */}
                 <footer>
                     <img src={Googleplay} alt="" />
                     <img src={Appstore} alt="" />

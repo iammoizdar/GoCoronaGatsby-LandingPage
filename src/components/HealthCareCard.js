@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import UserSymptomLogo from '../images/Symptomlogo.png'
+import UserLogo from '../images/Userlogo.png'
+import HeartLogo from '../images/heartlogo.png'
 
 
 const CardWrapper= styled.div`
@@ -14,9 +16,18 @@ const CardWrapper= styled.div`
     background: #FFFFFF;
 box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
 border-radius: 8px;
+
+h3{
+    margin: 40px 0 10px;
+}
+p{
+    font-size: 12px;
+    color: #616161;
+    white-space: pre-line;
+}
 `
 const UsersLogo= styled.div`
-    width: 100%;
+    display: inline-block;
 `
 
 
@@ -27,27 +38,27 @@ export function HealthCareCards (){
         <>
 
         <HealthCareCard
-        Cards ={
+        Cards={
             {
-                logo: {UserSymptomLogo},
+                logo: UserSymptomLogo,
                 name: "Symptom Checker",
                 Text: "Check if you are infected by COVID-19 with our Symptom Checker"
             }
         }
         />
         <HealthCareCard
-        Cards ={
+        Cards={
             {
-                logo: {UserSymptomLogo},
+                logo: UserLogo,
                 name: "24x7 Medical support",
                 Text: "Consult with 10,000+ health workers about your concerns."
             }
         }
         />
         <HealthCareCard
-        Cards ={
+        Cards={
             {
-                logo: {UserSymptomLogo},
+                logo: HeartLogo,
                 name: "Conditions",
                 Text: "Bringing premium healthcare features to your fingertips."
             }
@@ -56,12 +67,6 @@ export function HealthCareCards (){
         </>
     )
 }
-
-
-
-
-
-
 
 const HealthCareCard = (props) => {
     return (

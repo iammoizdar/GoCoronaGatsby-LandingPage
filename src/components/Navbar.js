@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Logo from "../images/logo.png"
 import { Link as GatsbyLink} from 'gatsby'
-import { Button } from '../styles/Button'
+import Button from './Button'
+import { device } from '../styles/Responsive'
 const NavBar = styled.div`
     display: flex;
     width: 100%;
@@ -12,6 +13,11 @@ const NavBar = styled.div`
 const Logodiv = styled.div`
     cursor: pointer;
     width: 30%;
+     img{
+          @media ${device.mobileL} { 
+    width: 150px;
+     }
+  }
 `
 const NavLinks = styled.div`
   display: flex;
@@ -20,6 +26,9 @@ const NavLinks = styled.div`
   gap: 45px;
   color: #fff;
   text-transform: uppercase;
+   @media ${device.laptop} { 
+    display: none;
+  }
 
 `
 const StyledLink = styled(GatsbyLink)`

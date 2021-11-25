@@ -1,14 +1,16 @@
 import React from "react"
 import styled from "styled-components"
 import Boxes from"../images/Boxes.png"
+import { device } from "../styles/Responsive"
 const BoxWrapper = styled.div `
-    width: 760px;
+    width: 100%;
     height: 200px;
     background: url(${Boxes}) no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     background-position: center;
+    background-size: contain;
 `
 const InnerBox = styled.div`
     width: 654px;
@@ -19,6 +21,8 @@ const InnerBox = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-shadow: 0px 2px 24px 0px rgba(88, 126, 236, 15%);
+
 `
 const Userbox = styled.div`
   display: flex;
@@ -38,6 +42,14 @@ const Userbox = styled.div`
       padding-top: 8px;
   }
   
+     @media ${device.mobileL} { 
+   h4{
+      font-size: 23px;  }
+      span{
+          font-size: 8px;
+          letter-spacing: 2px;
+      }
+  }
 `
 function UsersNames(props) {
   return (<Userbox>
